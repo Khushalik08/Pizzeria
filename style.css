@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+:root{
+    --black: black;
+    --white: white;
+    
+    
+}
+
+html{
+    font-size: 84%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+
+.btn{
+   /* color: var(--white); */
+   font-weight: 200;
+   /* background: none; */
+   font-size: 1.2rem;
+   padding: 11px 8px;
+   border: 1px solid;
+   border-radius: 1rem; 
+
+}
+
+.btn:hover{
+    background: rgb(247, 243, 246);
+    border: 1px solid white;
+    /* color: var(--white); */
+}
+.home{
+    height: 100vh;
+    background: url('pizza.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+.home h1{
+    font-size: 2.8rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+    color: var(--white)
+}
+
+.home p{
+    font-size: 1.4rem;
+    font-weight: 200;
+    margin-bottom: 4rem;
+    text-transform: none;
+    color: var(--white);
+}
+
+.header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   padding: 25px;
+   display: flex;
+   align-items: center;
+   z-index: 200;
+}
+
+.header.active{
+    background-color: var(--white);
+    /* box-shadow: 0 0 1 rgba(0,0,1,1,1px); */
+}
+
+.header.active .logo,
+.header.active .navbar a{
+    color: var(--black);
+}
+
+
+.header .logo{
+    margin-right: auto;
+    font-size: 25px;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.header .logo span{
+
+}
+
+.header .navbar a{
+    font-size: 19px;
+    color: var(--white);
+    margin-left: 25px;
+}
+
+.joe .boxes{
+    padding: 45px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem,1fr));
+    gap: 14px;
+    background-color: rgb(232, 251, 253);
+}
+
+.joe .boxes .box {
+    height: 20rem;
+    width: 20rem;
+}
+.boxes .box img{
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+}
+.joe .boxes .box {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--white);
+    justify-content: center;
+}
+
+.joe .boxes .box p{
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 2px;
+}
+
